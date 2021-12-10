@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.btn{
+	display: block;
+    width: 10%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h3>Photo <span>Gallery</span></h3>
+    </div>
+    <div class="box">
+      
+      <div class="dream">
+        <img src="images/1.jpg">
+         <img src="images/2.jpg">
+          <img src="images/3.jpg">
+           <img src="images/4.jpg">
+            <img src="images/5.jpg">
+            
+      </div>
+
+        <div class="dream">
+        <img src="images/6.jpg">
+         <img src="images/7.jpg">
+          <img src="images/8.jpg">
+           <img src="images/9.jpg">
+            <img src="images/10.jpg">
+            
+      </div>
+
+        <div class="dream">
+        <img src="images/11.jpg">
+         <img src="images/12.jpg">
+          <img src="images/13.jpg">
+           <img src="images/14.jpg">
+            <img src="images/15.jpg">
+            
+      </div>
+
+
+
+
+    </div>
+    <div class="btn">
+      <a href="#">More</a>
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+</html>
